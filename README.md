@@ -1,5 +1,5 @@
 # ![Parcoursearch](https://github.com/ecnivtwelve/parcoursearch/assets/32978709/3fecedf9-95a9-4bab-ac4f-e7a2c0b0c930)
-> Recherchez et découvrez les formations Paroursup de vos rêves avec un moteur de recherche libre.
+> Recherchez et découvrez les formations Parcoursup de vos rêves avec un moteur de recherche libre.
 
 Parcoursearch est une interface graphique en ligne pour [l'API Parcoursup - vœux de poursuite d'études et de réorientation dans l'enseignement supérieur et réponses des établissements](https://data.enseignementsup-recherche.gouv.fr/explore/dataset/fr-esr-parcoursup/information/) permettant de trouver facilement des formations.
 
