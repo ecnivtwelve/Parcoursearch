@@ -269,7 +269,7 @@
       <div class="app-title">
         <img class="logo" src="/logo.svg" alt="Parcoursearch" />
 
-        <p class="desc">Recherchez et découvrez les formations Paroursup de vos rêves avec un moteur de recherche libre.</p>
+        <p class="desc">Recherchez et découvrez les formations Parcoursup de vos rêves avec un moteur de recherche libre.</p>
       </div>
       
       <div class="search-form">
