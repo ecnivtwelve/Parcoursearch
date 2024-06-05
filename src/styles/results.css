@@ -1,0 +1,172 @@
+.etab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.etab-content * {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.etab-content .school {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.etab-content .cursus {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.parcoursup-results {
+  display: flex;
+  gap: 0px;
+  flex-direction: column;
+}
+
+.parcoursup-result {
+  display: flex;
+  gap: 16px;
+  width: calc(100% - 8px * 4);
+
+  margin: 8px;
+  padding: 8px;
+
+  border-radius: 10px;
+
+  animation: parcoursup-result 0.3s;
+  animation-delay: calc(var(--index) * 0.03s);
+  animation-fill-mode: forwards;
+
+  opacity: 0;
+
+  transition: background-color 0.3s;
+}
+
+@keyframes parcoursup-result {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.parcoursup-result.highlight {
+  background-color: #E1000F22;
+}
+
+.parcoursup-result .psup-icon-container {
+  min-width: 36px;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: #00009124;
+  border: 1px solid #00009142;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.psup-icon-container svg {
+  width: 24px;
+  height: 24px;
+  margin: auto;
+  color: #000091;
+}
+
+.parcoursup-result .psup-data {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 85%;
+}
+
+.psup-etab-container {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  width: 100%;
+}
+
+.psup-nom-fili {
+  border-radius: 5px;
+  background: #00009132;
+  padding: 2px 8px;
+  color: #000091;
+  font-size: 14px;
+  font-weight: 600;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.psup-nom-type {
+  border-radius: 300px;
+  border: 1px solid #00009142;
+  padding: 2px 8px;
+  color: #000091;
+  font-size: 14px;
+  font-weight: 600;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.psup-nom-etab {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000091;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.psup-nom-form {
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.psup-nom-ville {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.7;
+  width: 100%;
+}
+
+.parcoursup-result:hover {
+  cursor: pointer;
+}
+
+.parcoursup-result:hover .psup-nom-form {
+  text-decoration: underline;
+}
+
+.no-result {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 16px;
+  text-align: center;
+}
+
+.no-result svg {
+  margin-bottom: 10px;
+}
+
+.no-result h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.no-result p {
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.7;
+}

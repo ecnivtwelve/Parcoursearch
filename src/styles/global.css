@@ -15,6 +15,13 @@
     padding: 16px;
 
     background-color: #F4F4F9;
+
+    overflow: hidden;
+}
+
+.panes-main {
+    display: flex;
+    gap: 16px;
 }
 
 .pane {
@@ -32,3 +39,94 @@
     background-color: #FFFFFF;
     border: 1px solid #00000024;
 }
+
+.pane-results {
+    overflow-y: auto;
+    padding: 0px;
+    max-width: 500px;
+}
+
+.pane-map {
+    padding: 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1400px) {
+    .pane-results {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .panes-main {
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+    .pane-search {
+        max-width: 100%;
+        height: fit-content;
+        flex: none;
+    }
+
+    .pane-results {
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .app {
+        flex-direction: column-reverse;
+    }
+
+    .panes-main {
+        flex-direction: column;
+        max-width: 100%;
+        height: 80%;
+    }
+
+    .pane-search {
+        max-width: 100%;
+        height: fit-content;
+        flex: none;
+    }
+
+    .pane-results {
+        max-width: 100%;
+        height: 100%;
+    }
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.loader-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    width: 36px;
+    height: 36px;
+    border: 5px solid #FFF;
+    border-bottom-color: #E1000F;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 

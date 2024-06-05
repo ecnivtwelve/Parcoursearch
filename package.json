@@ -21,6 +21,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"lucide-svelte": "^0.383.0"
+		"leaflet": "^1.9.4",
+		"lucide-svelte": "^0.383.0",
+		"svelte-leafletjs": "^1.2.0",
+		"svelte-map-leaflet": "^0.5.0"
 	}
 }
