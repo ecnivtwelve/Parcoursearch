@@ -8,6 +8,9 @@ Parcoursearch est une interface graphique en ligne pour [l'API Parcoursup - vœu
 - [ ] Consulter les formations en détail
 - [ ] Trier et organiser ses voeux
 
+## Capture d'écran
+![Aperçu de la page](https://github.com/ecnivtwelve/Parcoursearch/assets/32978709/0cc6bce1-3d52-43d0-8620-bc93b5e5b69e)
+
 ## Contribuer
 
 ### Installer les dépendances
