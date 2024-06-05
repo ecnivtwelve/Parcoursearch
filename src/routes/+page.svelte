@@ -406,6 +406,11 @@
         </div>
       </div>
 
+      <p class="cond">
+        Ce projet open-source est sous licence libre.<br/>
+        2024 Vince Linise - <a href="https://github.com/ecnivtwelve/Parcoursearch">Voir sur GitHub</a>
+      </p>
+
     </div>
 
     <div class="pane pane-results">
